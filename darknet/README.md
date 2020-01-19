@@ -33,6 +33,10 @@ specifically,
 3-1. install dependecies following https://github.com/AlexeyAB/darknet#requirements
 3-2. compile
 ```
+# for example, compile CPU version on Linux(using make)
+make
+```
+```
 # for example, compile on Linux(using cmake)
 mkdir build-release
 cd build-release
@@ -40,24 +44,21 @@ cmake ..
 make
 make install
 ```
-```
-# for example, compile CPU version on Linux(using make)
-make
-```
-
 After compiling, test if success
 ```
 ./darknet detector test ./cfg/coco.data ./cfg/yolov3.cfg ./yolov3.weights
 ```
 3-3. run yolo-v3
-See "How to use" on [AlexeyAB/darknet](https://github.com/AlexeyAB/darknet) or try this:
+See "How to use" on [AlexeyAB/darknet](https://github.com/AlexeyAB/darknet#how-to-use-on-the-command-line)
+You can detect from images, videos, webcam etc.
+Here is an example of detect from images:
 ```
 #yolov3-tiny(CPU:650ms, 1080ti:2ms)
-./darknet detector test ../obj.data ../yolov3-tiny_obj.cfg ../backup/my_yolov3-tiny_obj_final.weights -ext_output ../obj/IMG_20200108_163825.jpg
+./darknet detector test ../obj.data ../yolov3-tiny_obj.cfg ../backup/my_yolov3-tiny_obj_final.weights -ext_output ../obj/IMG_20200108_163825.jpg -thresh 0.4
 ```
 ```
-#yolov3(CPU:4600ms)
-./darknet detector test ../obj.data ../yolo-obj.cfg ../backup/my-yolo-obj_final.weights -ext_output ../obj/IMG_20200108_163825.jpg
+#yolov3(CPU:22000ms, 1080ti:30ms)
+./darknet detector test ../obj.data ../yolo-obj.cfg ../backup/my-yolo-obj_final.weights -ext_output ../obj/IMG_20200108_163825.jpg -thresh 0.4
 ```
 
 Then you can see
