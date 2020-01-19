@@ -11,7 +11,7 @@ and organize as follows:
 darknet
 ├── backup
 │   ├── my_yolov3-tiny_obj_final.weights
-│   ├── yolo-obj_final.weights
+│   ├── yolo-obj_final.weights(optional)
 ├── obj
 ├── obj_resized
 ├── obj_resized_detected
@@ -52,7 +52,12 @@ After compiling, test if success
 3-3. run yolo-v3
 See "How to use" on [AlexeyAB/darknet](https://github.com/AlexeyAB/darknet) or try this:
 ```
+#yolov3-tiny(CPU:650ms, 1080ti:2ms)
 ./darknet detector test ../obj.data ../yolov3-tiny_obj.cfg ../backup/my_yolov3-tiny_obj_final.weights -ext_output ../obj/IMG_20200108_163825.jpg
+```
+```
+#yolov3(CPU:4600ms)
+./darknet detector test ../obj.data ../yolo-obj.cfg ../backup/my-yolo-obj_final.weights -ext_output ../obj/IMG_20200108_163825.jpg
 ```
 
 Then you can see
