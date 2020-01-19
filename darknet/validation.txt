@@ -1,0 +1,14 @@
+build/darknet/x64/data/obj/IMG_20200108_163825.jpg
+build/darknet/x64/data/obj/IMG_20200108_163912.jpg
+build/darknet/x64/data/obj/IMG_20200108_170714.jpg
+build/darknet/x64/data/obj/IMG_20200108_171634.jpg
+build/darknet/x64/data/obj/IMG_20200108_171947.jpg
+build/darknet/x64/data/obj/IMG_20200108_172212.jpg
+build/darknet/x64/data/obj/IMG_20200109_165139.jpg
+build/darknet/x64/data/obj/IMG_20200109_165156.jpg
+build/darknet/x64/data/obj/IMG_20200109_165232.jpg
+build/darknet/x64/data/obj/IMG_20200109_165308.jpg
+build/darknet/x64/data/obj/IMG_20200109_165332.jpg
+build/darknet/x64/data/obj/IMG_20200109_165355.jpg
+build/darknet/x64/data/obj/IMG_20200109_165417.jpg
+build/darknet/x64/data/obj/IMG_20200109_165727.jpg
